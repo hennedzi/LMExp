@@ -1,4 +1,6 @@
-﻿namespace LMExp.Domain;
+﻿using LMExp.Domain.Entitys;
+
+namespace LMExp.Domain;
 
 public interface IContext
 {

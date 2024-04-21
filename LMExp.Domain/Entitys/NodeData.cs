@@ -1,4 +1,4 @@
-﻿namespace LMExp.Domain;
+﻿namespace LMExp.Domain.Entitys;
 
 public class NodeData
 {

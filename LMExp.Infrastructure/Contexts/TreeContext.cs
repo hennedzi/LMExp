@@ -1,10 +1,17 @@
 ﻿using LMExp.Domain;
+using LMExp.Domain.Entitys;
+using LMExp.Infrastructure.Extensions;
 
-namespace LMExp.Infrastructure;
+namespace LMExp.Infrastructure.Contexts;
 
 public class TreeContext : IContext
 {
-    public Tree Tree { get; set; }
+    private Tree Tree { get; set; }
+
+    public TreeContext(Tree tree)
+    {
+        Tree = tree;
+    }
 
     public Task<Node> GET(string key)
     {

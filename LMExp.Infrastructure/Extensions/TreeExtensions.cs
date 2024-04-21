@@ -1,6 +1,7 @@
 ﻿using LMExp.Domain;
+using LMExp.Domain.Entitys;
 
-namespace LMExp.Infrastructure;
+namespace LMExp.Infrastructure.Extensions;
 
 public static class TreeExtensions
 {
