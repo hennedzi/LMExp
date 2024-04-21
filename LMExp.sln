@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMExp", "LMExp\LMExp.csproj", "{984B3B54-2827-4343-A7BC-C10A83C03636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMExp.Domain", "LMExp.Domain\LMExp.Domain.csproj", "{6AD12A11-B55E-464E-B90B-F488D97BB181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMExp.Infrastructure", "LMExp.Infrastructure\LMExp.Infrastructure.csproj", "{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{984B3B54-2827-4343-A7BC-C10A83C03636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984B3B54-2827-4343-A7BC-C10A83C03636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984B3B54-2827-4343-A7BC-C10A83C03636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984B3B54-2827-4343-A7BC-C10A83C03636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD12A11-B55E-464E-B90B-F488D97BB181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD12A11-B55E-464E-B90B-F488D97BB181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD12A11-B55E-464E-B90B-F488D97BB181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD12A11-B55E-464E-B90B-F488D97BB181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
