@@ -36,7 +36,7 @@ public static class TreeExtensions
 
     public static bool Exists(this Tree tree, string key)
     {
-        return true;
+        return tree.Root.Exist(key);
     }
 
     public static bool Delete(this Tree tree, string key)

@@ -2,7 +2,7 @@
 
 namespace LMExp.Infrastructure;
 
-public class TreeContext
+public class TreeContext : IContext
 {
     public Tree Tree { get; set; }
 
@@ -20,7 +20,7 @@ public class TreeContext
 
     public Task<bool> PUT(string key, string newKey)
     {
-        return Task.FromResult<bool>(Tree.Update(key,newKey));
+        return Task.FromResult<bool>(Tree.Update(key, newKey));
     }
 
     public Task<bool> DELETE(string key)
