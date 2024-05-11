@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMExp.Domain", "LMExp.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMExp.Infrastructure", "LMExp.Infrastructure\LMExp.Infrastructure.csproj", "{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMExp.Events", "LMExp.Events\LMExp.Events.csproj", "{CB045623-D844-4917-9AC6-841C230C72D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98F9AA37-751E-4DC8-AD8F-01DA7B4A4B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB045623-D844-4917-9AC6-841C230C72D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB045623-D844-4917-9AC6-841C230C72D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB045623-D844-4917-9AC6-841C230C72D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB045623-D844-4917-9AC6-841C230C72D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

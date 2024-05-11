@@ -1,6 +1,5 @@
 ﻿using LMExp.Domain;
 using LMExp.Domain.Entitys;
-using LMExp.Infrastructure.Extensions;
 
 namespace LMExp.Infrastructure.Contexts;
 
