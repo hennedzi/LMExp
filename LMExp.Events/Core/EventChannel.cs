@@ -1,9 +1,10 @@
 ﻿using System.Threading.Channels;
 using LMExp.Domain.Entitys;
+using LMExp.Events.Domain;
 
-namespace LMExp.Events.Events;
+namespace LMExp.Events.Core;
 
-public class EventChannel : IDisposable
+public sealed class EventChannel : IDisposable
 {
     public Task Completion => _channel.Reader.Completion;
 
@@ -11,7 +12,7 @@ public class EventChannel : IDisposable
 
     private readonly Channel<Request> _channel = Channel.CreateUnbounded<Request>();
 
-    internal class EventSubscription : IDisposable
+    internal sealed class EventSubscription : IDisposable
     {
         private readonly Action<Request> _subscribe;
         private readonly Action _unsubscribe;

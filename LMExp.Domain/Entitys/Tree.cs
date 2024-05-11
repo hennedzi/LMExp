@@ -1,4 +1,6 @@
-﻿namespace LMExp.Domain.Entitys;
+﻿using System.Text;
+
+namespace LMExp.Domain.Entitys;
 
 public class Tree
 {
@@ -63,9 +65,11 @@ public class Tree
         }
         else
         {
-            locationKey += keys[0];
+            StringBuilder sb = new();
+            sb.Append(keys[0]);
             for (int i = 1; i < keys.Length - 1; i++)
-                locationKey += "/" + keys[i];
+                sb.Append("/" + keys[i]);
+            locationKey = sb.ToString();
 
             if (!Exists(locationKey))
                 return false;
@@ -94,10 +98,11 @@ public class Tree
         }
         else
         {
-            locationKey += keys[0];
+            StringBuilder sb = new();
+            sb.Append(keys[0]);
             for (int i = 1; i < keys.Length - 1; i++)
-                locationKey += "/" + keys[i];
-
+                sb.Append("/" + keys[i]);
+            locationKey = sb.ToString();
             if (!Exists(locationKey))
                 return false;
             var location = Get(locationKey);

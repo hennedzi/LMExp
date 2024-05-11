@@ -1,5 +1,7 @@
 ﻿using LMExp.Domain;
 using LMExp.Domain.Entitys;
+using LMExp.Events.Core;
+using LMExp.Events.Domain;
 
 namespace LMExp.Events.Events;
 
@@ -9,7 +11,7 @@ public class EventSystem
 
     private readonly IContext _context;
     
-    private Dictionary<Request, object> _results = [];
+    private readonly Dictionary<Request, object> _results = [];
     
     private readonly SemaphoreSlim _sync = new(1, 1);
 

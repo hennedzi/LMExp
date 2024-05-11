@@ -13,11 +13,11 @@ public class Node
     public bool Exist(string data)
     {
         if (Data.Value.Equals(data)) return true;
-        return Nodes.Any(n => n.Exist(data));
+        return Nodes.Exists(n => n.Exist(data));
     }
 
     public Node? GetNode(string value)
-        => Nodes.FirstOrDefault(n => n.Data.Value == value);
+        => Nodes.Find(n => n.Data.Value == value);
 
     public void AddNode(string value)
         => Nodes.Add(new(value));

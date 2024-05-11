@@ -1,11 +1,13 @@
-﻿namespace LMExp.Domain.Entitys;
+﻿using LMExp.Domain.Entitys;
+
+namespace LMExp.Events.Domain;
 
 public class Request
 {
-    public Guid Id;
+    public Guid Id { get; }
     public RequestType Type { get; }
-    public string Key;
-    public string? ComputeKey = null;
+    public string Key { get; }
+    public string? ComputeKey { get; } = null;
 
     public override bool Equals(object? obj)
     {

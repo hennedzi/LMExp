@@ -1,4 +1,4 @@
-﻿namespace LMExp.Domain.Entitys;
+﻿namespace LMExp.Events.Domain;
 
 public enum RequestType : byte
 {
